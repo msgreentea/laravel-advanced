@@ -34,3 +34,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';
+Route::get('/home', [AuthorController::class, 'index'])->middleware('auth');
+Route::get('/auth', [AuthorController::class, 'check']);
+Route::post('/auth', [AuthorController::class, 'checkUser']);
