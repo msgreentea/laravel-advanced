@@ -21,6 +21,13 @@
 @section('title', 'index.blade.php')
 
 @section('content')
+@if (Auth::check())
+<p>ログイン中ユーザー:{{$user->name . 'メール' . $user->emial . '' }}</p>
+@else
+<p>
+    ログインしていません。(<a href="/login">ログイン</a> | <a href="/register">登録</a>
+</p>
+@endif
 <table>
     <tr>
         <th>Data</th>
