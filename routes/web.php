@@ -6,7 +6,7 @@
 // use App\Http\Controllers\SessionController;
 // use App\Models\Person;
 // use App\Models\Product;
-use Illuminnate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 
 // Route::get('/home', [AuthorController::class, 'index']);
