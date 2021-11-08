@@ -24,6 +24,6 @@ class HelloTest extends TestCase
         $this->assertEquals('Hello World', $txt);
 
         $n = random_int(0, 100);
-        $this->assertlessThan(100, $n);
+        $this->assertLessThan(100, $n);
     }
 }
